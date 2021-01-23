@@ -1,6 +1,6 @@
 // assign a few global constants that we'll need later
-const APP_PREFIX = "expense-tracker-";
-const VERSION = "v1";
+const APP_PREFIX = "ExpenseTracker-";
+const VERSION = "version_01";
 const CACHE_NAME = APP_PREFIX + VERSION;
 const DATA_CACHE_NAME = "data-cache-" + VERSION;
 
@@ -56,6 +56,7 @@ self.addEventListener("fetch", function (evt) {
     );
     return;
   }
+
   evt.respondWith(
     fetch(evt.request).catch(function () {
       return caches.match(evt.request).then(function (response) {
