@@ -1,6 +1,6 @@
 {
-  "name": "Expense Tracker",
-  "short_name": "Expense Tracker",
+  "name": "Expense-Tracker",
+  "short_name": "Expense-Tracker",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
@@ -45,6 +45,6 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone"
 }
