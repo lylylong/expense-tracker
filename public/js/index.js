@@ -1,20 +1,18 @@
 let transactions = [];
 let myChart;
 
-const getAllExpense = () => {
-  fetch("/api/transaction")
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      // save db data on global variable
-      transactions = data;
+fetch("/api/transaction")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    // save db data on global variable
+    transactions = data;
 
-      populateTotal();
-      populateTable();
-      populateChart();
-    });
-};
+    populateTotal();
+    populateTable();
+    populateChart();
+  });
 
 function populateTotal() {
   // reduce transaction amounts to a single total value
@@ -153,5 +151,3 @@ document.querySelector("#add-btn").onclick = function () {
 document.querySelector("#sub-btn").onclick = function () {
   sendTransaction(false);
 };
-
-getAllExpense();
