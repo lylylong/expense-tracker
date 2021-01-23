@@ -1,5 +1,9 @@
 // give indexDB options for different web browsers
-
+const indexedDB =
+  window.indexedDB ||
+  window.mozIndexedDB ||
+  window.webkitIndexedDB ||
+  window.msIndexedDB;
 // create variable to hold db connection
 let db;
 // establish a connection to IndexedDB database called "expense-tracker" and set it to version 1
