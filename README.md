@@ -20,8 +20,10 @@ https://github.com/lylylong/expense-tracker.git
 
 ## Screenshots
 
-The screenshots demonstrate the user experience:\
-![expense-tracker](https://user-images.githubusercontent.com/70302749/105624714-dcedb700-5df1-11eb-8153-b96a5c26d5a1.png)
+The screenshots demonstrate the user experience:
+
+![process](https://user-images.githubusercontent.com/70302749/105646627-d5202800-5e6e-11eb-90d1-d42056a78587.gif)
+![service worker](https://user-images.githubusercontent.com/70302749/105646746-98086580-5e6f-11eb-9b77-4a8122101408.png)
 
 ## Progressive Web Application
 
